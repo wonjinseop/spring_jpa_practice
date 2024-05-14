@@ -16,8 +16,9 @@ public class Student {
     
     @Id
     @Column(name = "stu_id")
-    @GeneratedValue(generator = "uid")
-    @GenericGenerator(name = "uid", strategy = "uuid")
+//    @GeneratedValue(generator = "uid")
+//    @GenericGenerator(name = "uid", strategy = "uuid")
+    @GeneratedValue(strategy = GenerationType.UUID) // Spring Boot3에서 JPA를 사용할 때 권장하는 문법.
     private String id;
     
     @Column(name = "stu_name", nullable = false)
