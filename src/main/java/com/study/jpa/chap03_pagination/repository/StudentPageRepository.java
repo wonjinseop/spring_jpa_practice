@@ -1,4 +1,4 @@
-package com.study.jpa.chap04_pagination.repository;
+package com.study.jpa.chap03_pagination.repository;
 
 import com.study.jpa.chap02_querymethod.entity.Student;
 import org.springframework.data.domain.Page;

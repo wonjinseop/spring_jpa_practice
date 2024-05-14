@@ -1,6 +1,7 @@
-package com.study.jpa.chap04_pagination.repository;
+package com.study.jpa.chap03_pagination.repository;
 
 import com.study.jpa.chap02_querymethod.entity.Student;
+import com.study.jpa.chap03_pagination.repository.StudentPageRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,8 +14,6 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 // JPA는 INSERT, UPDATE, DELETE시에 트랜잭션을 기준으로 동작하는 경우가 많음.
