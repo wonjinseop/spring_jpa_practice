@@ -30,8 +30,8 @@ public class PageResponseDTO {
         this.currentPage = pageData.getPageable().getPageNumber() + 1;
         this.endPage = (int) (Math.ceil((double) currentPage / PAGE_COUNT) * PAGE_COUNT);
         this.startPage = endPage - PAGE_COUNT + 1;
-        int realEnd = pageData.getTotalPages();
         
+        int realEnd = pageData.getTotalPages();
         if (realEnd < this.endPage) this.endPage = realEnd;
         
         this.prev = startPage > 1;
